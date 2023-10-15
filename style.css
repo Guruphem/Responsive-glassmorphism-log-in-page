@@ -1,0 +1,221 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100dvh;
+            background: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .parent {
+            height: 350px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .red-bg {
+            background-color: rgb(255, 29, 78);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            right: -45px;
+        }
+        
+        .purple-bg {
+            background-color: purple;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -45px;
+            left: -45px;
+        }
+        
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .wrapper {
+            width: 400px;
+            background: hsl(0 0% 100% / 0.1);
+            backdrop-filter: blur(1rem);
+            -webkit-backdrop-filter: blur(1rem);
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 1.8rem 2.5rem;
+            position: relative;
+        }
+        /* @supports (backdrop-filter: blur(1rem)) {
+            .primary-navigation {
+                background: hsl(0 0% 100% / 0.1);
+                backdrop-filter: blur(1rem);
+            }
+        } */
+        
+        h1 {
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        form>p {
+            font-size: .8rem;
+            color: whitesmoke;
+            text-transform: capitalize;
+            margin-block: .4rem 1rem;
+        }
+        
+        label {
+            font-size: .9rem;
+            color: whitesmoke;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            display: block;
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: .5rem .4rem;
+            margin-block: .2rem .7rem;
+            outline: none;
+            transition: all .385ms ease-in-out;
+        }
+        
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: 1px solid rgb(212, 0, 46);
+        }
+        
+        .wrapper-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-block: 0 1.2rem;
+        }
+        
+        button {
+            width: 100%;
+            background: rgb(212, 0, 46);
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            border: none;
+            padding: .5rem 0;
+            margin-block: 0 1rem;
+            cursor: pointer;
+            transition: opacity .385ms ease-in-out;
+        }
+        
+        button:hover {
+            opacity: .8;
+        }
+        
+        button:active {
+            opacity: .6;
+        }
+        
+        input[type="checkbox"] {
+            accent-color: rgb(255, 29, 78);
+            cursor: pointer;
+        }
+        
+        .wrapper div {
+            display: flex;
+            gap: .2rem;
+        }
+        
+        .wrapper-2 label {
+            font-size: .8rem;
+        }
+        
+        .wrapper-2 p {
+            font-size: .8rem;
+            color: whitesmoke;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        
+        .signup {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .signup p {
+            color: whitesmoke;
+            font-size: .9rem;
+            margin-inline-end: .3rem;
+        }
+        
+        a {
+            color: rgb(212, 0, 46);
+            font-size: .9rem;
+            text-decoration: none;
+            transition: opacity .385ms ease-in-out;
+        }
+        
+        a:hover {
+            opacity: .8;
+        }
+        
+        a:active {
+            opacity: .6;
+        }
+        
+        @media (max-width: 568px) {
+            .parent {
+                height: 430px;
+                width: 300px;
+            }
+            .red-bg {
+                height: 50px;
+                width: 50px;
+                top: -5px;
+                right: -20px;
+            }
+            .purple-bg {
+                height: 50px;
+                width: 50px;
+                bottom: -5px;
+                left: -20px;
+            }
+            .wrapper {
+                width: 300px;
+                padding: 1rem 1.5rem;
+            }
+            label {
+                font-size: .8rem;
+            }
+            .wrapper-2 {
+                flex-direction: column;
+            }
+            .wrapper-2 div {
+                align-self: flex-start;
+            }
+            .wrapper-2 p {
+                margin-block-start: .5rem;
+            }
+            .signup {
+                flex-direction: column;
+                align-items: center;
+            }
+            .signup p {
+                font-size: .8rem;
+                margin-block-end: .3rem;
+            }
+            a {
+                font-size: .8rem;
+            }
+        }
