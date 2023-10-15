@@ -56,12 +56,6 @@
             padding: 1.8rem 2.5rem;
             position: relative;
         }
-        /* @supports (backdrop-filter: blur(1rem)) {
-            .primary-navigation {
-                background: hsl(0 0% 100% / 0.1);
-                backdrop-filter: blur(1rem);
-            }
-        } */
         
         h1 {
             color: white;
